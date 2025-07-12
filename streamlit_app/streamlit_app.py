@@ -14,8 +14,8 @@ with st.form(key="loan_form"):
 
     if st.form_submit_button("Predict"):
         # Load the model and scaler
-        rf_model = joblib.load('../model/rf_model.pkl')
-        scaler = joblib.load('../model/scaler.pkl')
+        rf_model = joblib.load('../rf_model.pkl')
+        scaler = joblib.load('../scaler.pkl')
 
         # Preprocess input data
         education_numeric = 1 if education == "Graduate" else 0
