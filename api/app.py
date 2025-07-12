@@ -6,8 +6,8 @@ import numpy as np
 app = FastAPI()
 
 # Load the pre-trained model and scaler
-rf_model = joblib.load('../model/rf_model.pkl')
-scaler = joblib.load('../model/scaler.pkl')
+rf_model = joblib.load('../rf_model.pkl')
+scaler = joblib.load('../scaler.pkl')
 
 class LoanApplication(BaseModel):
     education: str  # "Graduate" or "Not Graduate"
