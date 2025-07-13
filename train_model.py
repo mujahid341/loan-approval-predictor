@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
 # load the dataset from a CSV file
-df = pd.read_csv('../data/loan_approval_dataset.csv')
+df = pd.read_csv('loan_approval_dataset.csv')
 
 # preprocess the dataset
 df = df[['education', 'self_employed','income_annum', 'loan_amount','cibil_score', 'loan_status']]
@@ -46,5 +46,5 @@ print(f'Random Forest Accuracy: {rf_accuracy}')
 print(f'Random Forest Confusion Matrix:\n{rf_conf_matrix}')
 
 # save the using joblib
-joblib.dump(rf_model, 'rf_model.pkl')
-joblib.dump(scaler, 'scaler.pkl')
+# joblib.dump(rf_model, 'rf_model.pkl')
+# joblib.dump(scaler, 'scaler.pkl')
